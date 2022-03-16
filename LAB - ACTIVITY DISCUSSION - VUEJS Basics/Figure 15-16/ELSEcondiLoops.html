@@ -1,0 +1,35 @@
+<!--    Name: Abigail Barrientos
+        App Name: ELSEcondiLoops.html (Figure 15. The  integration of v-if and v-else statements in the HTML.) 
+        Description: v-else directive can be used when the conditions on the v-if fails.
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+    <!-- Insert here the link to the CDN Vue package -->
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+                
+    <title>Vue JS Demo Application</title>
+</head>
+                
+<body>
+    <!-- using v-if -->
+    <div id="books">
+        <div v-if="showBooks">
+            <p>{{ btitle }} - {{ bauthor }} - {{ year }}</p>
+        </div>
+
+        <button @click="toggleShowBooks">
+            <span v-if="showBooks">Hide Books</span>
+            <span v-else>Show Books</span>
+        </button>
+    </div>  
+            
+<!-- Link to books.js -->
+<script src="books.js"></script>
+</body>
+</html>

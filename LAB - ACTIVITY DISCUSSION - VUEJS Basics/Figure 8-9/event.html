@@ -1,0 +1,31 @@
+<!--    Name: Abigail Barrientos
+        App Name: event.html (Figure 8 Embedding the v-on and @ directives in HTML) 
+        Description: A JS is also included to reflect the happenings of the demonstration, which will demonstrate the v-on directive in operation (changes).
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Insert here the link to the CDN Vue package -->
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    
+    <title>Vue JS Demo Application</title>
+</head>
+    
+<body>
+    <div id="app">
+        <p>{{ title }} - {{ author }} - {{ age }}</p>
+        <!-- Events on Vue using v-on -->
+        <button v-on:click="age++">Get Older</button>
+        <button v-on:click="age--">Get Younger</button>
+        <button @click="title = 'The title has changed.'">Change Title</button>
+    </div>
+
+<!-- Insert the below code to link to app.js -->
+<script src="app.js"></script>
+</body>
+</html>
